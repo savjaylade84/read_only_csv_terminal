@@ -1,20 +1,26 @@
 #!/bin/bash
 
-echo "Reading The File...."
-
 case $1 in 
 	"-l")
+	echo "Reading The File...."
 	cat $2 | tty-table | less
+	echo "Done Reading File..."
 	;;
 	"-c")
+	echo "Reading The File...."
 	cat $2 | tty-table | cat
+	echo "Done Reading File..."
 	;;
 	"-m")
+	echo "Reading The File...."
 	cat $2 | tty-table | more
+	echo "Done Reading File..."
 	;;
 	"-t")
+	echo "Reading The File...."
 	cat $2 | tty-table | csv.txt
-	echo "created csv.txt"
+	echo "Done Reading File..."
+	echo "created csv.txt..."
 	;;
 	"-v")
 	echo "author: john jayson b. de leon"
@@ -31,5 +37,3 @@ case $1 in
 	echo "-v to view version and the author"
 	;;
 esac
-
-echo "Done Reading File..."
