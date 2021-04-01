@@ -1,0 +1,77 @@
+#!/bin/bash
+
+# author: John Jayson B. De Leon
+# github: savjayalde84
+
+case $1 in
+
+	#attempting to install
+	"--install_dependency")
+
+	#check if setting the autherition of the file is good
+	chmod +x install_dependecies.bash
+	if [ $? -eq 0 ] 
+	then
+		echo "setting up..."
+		#check if the install is good
+		bash  install_dependecies.bash
+		if [ $? -eq 0 ] 
+		then 
+			echo "attempt installing dependencies..."
+		else 
+			echo "failed to attemp installing dependencies"
+		fi
+	else
+		echo "failed  setup dependencies"
+	fi
+	;;
+	
+	# print table using the less 
+	"-l")
+	echo "Reading The File...."
+	cat $2 | tty-table | less
+	echo "Done Reading File..."
+	;;
+
+	# print table in the terminal
+	"-c")
+	echo "Reading The File...."
+	cat $2 | tty-table | cat
+	echo "Done Reading File..."
+	;;
+
+	#print table using more
+	"-m")
+	echo "Reading The File...."
+	cat $2 | tty-table | more
+	echo "Done Reading File..."
+	;;
+
+	#print table in the txt file
+	"-t")
+	echo "Reading The File...."
+	cat $2 | tty-table | csv.txt
+	echo "Done Reading File..."
+	echo "created csv.txt..."
+	;;
+
+	#show the about of this tools
+	"-v")
+	echo "author: john jayson b. de leon"
+	echo "github: savjaylade84"
+	echo "@version 1.0"
+	;;
+
+	#show the manual
+	"-h" | *)
+	echo "usage: ./read_csv [option] filename"
+	echo "example : ./read_csv -t data.csv"
+	echo "-t is for storing csv to txt"
+	echo "-l is for using less to view csv"
+	echo "-c is for using cat to view csv"
+	echo "-m is for using more to view csv"
+	echo "-v to view version and the author"
+	echo "--install_dependency to install all the dependency"
+	;;
+	
+esac
