@@ -4,7 +4,7 @@
 1.) downloafd the repository<br>
 2.) go to repository files<br>
 3.) chmod +x the read_csv and install_dependendies  file<br>
-4.) bash read csv --install_dependency or ./read_csv --install_dependenc<br>
+4.) bash read csv --install_dependency or ./read_csv --install_dependency 
 to run and download all the dependencies that needed<br>
 <br>
 # How to use it<br>
