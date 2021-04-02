@@ -5,7 +5,7 @@
 - **How to setup it**<br>
 1. download the repository<br>
 2. go to repository folder<br>
-3. `chmod +x the read_csv` file<br>
+3. `chmod +x  read_csv` file<br>
 4. `chmod +x install_dependecies.bash` file<br>
 5. `bash read_csv --install_dependency` or `./read_csv --install_dependency` 
 to run and download all the dependencies that needed<br>  
