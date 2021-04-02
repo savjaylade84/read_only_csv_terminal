@@ -1,5 +1,6 @@
 # read_only_csv_terminal  
-**How to Setup**<br>
+**Before using it there are requirements follow the steps**<br>
+**How to setup it**<br>
 1. download the repository<br>
 2. go to repository folder<br>
 3. `chmod +x the read_csv` file<br>
