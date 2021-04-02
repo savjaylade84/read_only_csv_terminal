@@ -1,6 +1,6 @@
 # read_only_csv_terminal 
-###This tool read csv / excel file then convert it to a readable text in  terminal 
-###Note: only read can this tool offer  
+######This tool read csv / excel file then convert it to a readable text in  terminal 
+######Note: only read can this tool offer  
 **Before using it there are requirements follow the steps**<br>
 - **How to setup it**<br>
 1. download the repository<br>
